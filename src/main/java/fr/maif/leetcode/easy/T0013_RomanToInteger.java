@@ -96,7 +96,7 @@ public class T0013_RomanToInteger {
 
         int sum = 0;
 
-        for (int i = 0; i < s.length(); i++){ // On parcourt la chaine en entrée
+        for (int i = 0; i < s.length(); i++) { // On parcourt la chaine en entrée
             final char c = s.charAt(i); // On prend un caractère
             String romNumKey = Character.toString(c);
 
