@@ -19,14 +19,12 @@ public class GenerateParentheses {
     if (n == 0) {
       return Collections.emptyList();
     }
-    List<String> solutions = new ArrayList<String>();
+    List<String> solutions = new ArrayList<>();
     generateParenthesisHelper("", 0, 0, n, solutions);
     return solutions;
   }
 
-  private void generateParenthesisHelper(String string, int left, int right,
-      int n,
-      List<String> solutions) {
+  private void generateParenthesisHelper(String string, int left, int right, int n, List<String> solutions) {
     if (left > n) {
       return;
     }
